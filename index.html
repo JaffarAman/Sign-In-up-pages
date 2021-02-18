@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signIn</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="mainBox">
+        <div class="box">
+
+            <input type="text" id="email" placeholder="Email Address">
+            <div class="errorbox"><small id="emailerror" class="error"></small></div>
+            <input type="password" id="password" placeholder="Password">
+
+            <i id="lock" onclick="passcryt()" class="fas fa-lock"></i>
+
+            <div class="errorbox"><small id="passerror" class="error"></small></div>
+
+            <button class="btn" onclick="submit()"> SignIn</button>
+        </div>
+
+        <div class="upBox">
+            <div class="front">
+                <H2>Create an Account </H2>
+                <small>New here? Let's get started with your email.</small>
+            </div>
+            <div class="back">
+                <input type="text" id="fullName" placeholder="Enter Full Name">
+                <div class="errorbox2"><small id="nameError" class="error"></small></div>
+                <input type="text" id="emailup" placeholder="Email Address">
+                <div class="errorbox2"><small id="emailUpError" class="error"></small></div>
+                <input type="password" id="passup" placeholder="Enter Password">
+                <i onclick="upcry()" class="fas fa-lock" id="lock1"></i>
+                <div class="errorbox2"><small id="passupError" class="error"></small></div>
+
+                <input type="password" id="cnfrmpassup" placeholder="Confirm Password">
+                <i class="fas fa-lock" onclick="upcry2()" id="lock2"></i>
+                <div class="errorbox2"><small id="cnfrmpassupError" class="error"></small></div>
+
+                <button onclick="createAccount()">Create Your Account</button>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
